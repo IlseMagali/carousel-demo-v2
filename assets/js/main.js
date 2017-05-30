@@ -36,13 +36,13 @@ function mostrarImagen (target) {
 function anteriorImagen (e) {
   e.preventDefault();
   target = target - 1;
-	target = (target < 0) ? 3 : target;
+	target = (target < 0) ? 4 : target;
 	mostrarImagen(target);
 }
 
 function siguienteImagen(e) {
   e.preventDefault();
   target = target + 1;
-	target = (target > 3) ? 0 : target;
+	target = (target > 4) ? 0 : target;
 	mostrarImagen(target);
 }
