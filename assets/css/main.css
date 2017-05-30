@@ -1,0 +1,7 @@
+.carousel-content {
+  display:none;
+}
+
+.carousel-content.active {
+  display:block;
+}
