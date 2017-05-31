@@ -1,7 +1,25 @@
+body {
+  padding:5%;
+}
 .carousel-content {
   display:none;
+  background-color: rgba(100, 0, 0, 0.5);
 }
 
 .carousel-content.active {
   display:block;
+}
+
+ul {
+  display:flex;
+  justify-content: space-around;
+}
+
+div>ul>li {
+  border: 3px gray solid;
+  border-radius: 20%;
+}
+
+.controls a {
+  color: gray;
 }

@@ -3,35 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Carrousel con JS</title>
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
-    <div class="carousel">
-      <div data-slide="0" class="carousel-content active">
-        <img src="" alt="Imagen-1">
-      </div>
-      <div data-slide="1" class="carousel-content">
-        <img src="" alt="Imagen-2">
-      </div>
-      <div data-slide="2" class="carousel-content">
-        <img src="" alt="Imagen-3">
-      </div>
-      <div data-slide="3" class="carousel-content">
-        <img src="" alt="Imagen-4">
-      </div>
-      <div data-slide="4" class="carousel-content">
-        <img src="" alt="Imagen-5">
+    <div class="container center">
+      <div class="row">
+        <div class="carousel">
+          <div data-slide="0" class="carousel-content active">
+            <img src="assets/img/imagen-uno.jpeg" alt="Imagen-1">
+          </div>
+          <div data-slide="1" class="carousel-content">
+            <img src="assets/img/imagen-dos.jpg" alt="Imagen-2">
+          </div>
+          <div data-slide="2" class="carousel-content">
+            <img src="assets/img/imagen-tres.jpeg" alt="Imagen-3">
+          </div>
+          <div data-slide="3" class="carousel-content">
+            <img src="assets/img/imagen-cuatro.jpg" alt="Imagen-4">
+          </div>
+          <div data-slide="4" class="carousel-content">
+            <img src="assets/img/imagen-cinco.jpg" alt="Imagen-5">
+          </div>
+        </div>
       </div>
     </div>
-    <div class="controls">
-      <a href="#" class="previous">&#60;</a>
-      <button class="control" type="button" name="button" data-target="0"></button>
-      <button class="control" type="button" name="button" data-target="1"></button>
-      <button class="control" type="button" name="button" data-target="2"></button>
-      <button class="control" type="button" name="button" data-target="3"></button>
-      <button class="control" type="button" name="button" data-target="4"></button>
-      <button class="control" type="button" name="button" data-target="5"></button>
-      <a href="#" class="next">&#62;</a>
+    <div class="container center">
+      <div class="row">
+        <div class="controls center">
+          <ul class="indicators">
+            <a href="#" class="previous">&#60;</a>
+      			<li type="button" data-target="0" class="control indicator-item active"></li>
+      			<li type="button" data-target="1" class="control indicator-item "></li>
+      			<li type="button" data-target="2" class="control indicator-item "></li>
+      			<li type="button" data-target="3" class="control indicator-item "></li>
+      			<li type="button" data-target="4" class="control indicator-item "></li>
+            <a href="#" class="next">&#62;</a>
+      		</ul>
+
+        </div>
+      </div>
     </div>
     <script src="assets/js/jquery-3.2.1.min.js"></script>
     <script src="assets/js/main.js">
